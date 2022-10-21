@@ -132,7 +132,8 @@ def methods(request):
 
 class Login(View):
     def get(self,request):
-          return render(request, 'registration/login.html')
+        print(">>>>>>>>>>>>>>>>")
+        return render(request, 'registration/login.html')
     def post(self,request):
         email = request.POST['email']
         password = request.POST['password']

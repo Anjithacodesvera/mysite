@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Login-form{
+    width: 320px;
+    height: 480px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.Login-form{
+    color: #0A66C3;
+    font-size: 1.6rem;
+    padding-left: .1rem;
+    text-decoration: none;
+   font-weight: bolder;
+   color: #0A66C3;
+   background: rgba(10, 102, 195, 0.3);
+   border-radius: 30px;
+   transition: .3s;
+   top: 50%;
+   left: 50%;
+
+}
+
+.emailinput{
+
+    width:50px;
+
+
+}
