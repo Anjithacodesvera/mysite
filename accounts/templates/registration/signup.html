@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- <form method="POST">-->
+<!--     {% csrf_token %}-->
+<!--     <label for="first_name">first_name</label><br>-->
+<!--  <input type="text" id="first_name" name="first_name"><br>-->
+<!--     <label for="last_name">last_name</label><br>-->
+<!--  <input type="text" id="last_name" name="last_name"><br>-->
+<!--      <label for="email">email</label><br>-->
+<!--  <input type="text" id="email" name="email"><br>-->
+<!--     {{ form.errors.email }}-->
+<!--     <label for="password">password</label><br>-->
+<!--  <input type="password" id="password" name="password"><br>-->
+
+<!--       <label for="password2">Confirm_password</label><br>-->
+<!--  <input type="password" id="password2" name="password2"><br>-->
+
+<!--  <label for="phone_number">phone_number</label><br>-->
+<!--     {{ form.errors.phone_number }}-->
+<!--  <input type="text" id="phone_number" name="phone_number" required><br>-->
+<!--     <br>-->
+<!--  <label for="address">address:</label><br>-->
+<!--  <input type="text" id="address" name="address"><br>-->
+<!--     <label for="username">username</label><br>-->
+<!--  <input type="text" id="username" name="username">-->
+<form action = "" method = "post">
+	{% csrf_token %}
+	{{form.as_p }}
+    {{ errors.email }}
+<!--    {{ error.password }}-->
+	<input type="submit" value=Submit">
+</form>
+
+
+
+{% if form.errors %}
+{% for field in form %}
+{% for errors in field.errors %}
+
+<h1>email already exist</h1>
+{% endfor %}
+{% endfor %}
+{% endif %}
+
+
+
+
+
+ </form>
+
+</body>
+</html>

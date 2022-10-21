@@ -1,0 +1,18 @@
+<div class="login-page">
+  <div class="form">
+    <form method="POST" action="{% url 'hello' %}">
+      {% csrf_token %}
+      <h3 class="login-title">LOGIN</h3>
+      <div class="input-group mb-3">
+        <input type="email" name="email" placeholder="email" class="form-control">
+      </div>
+      <div class="input-group mb-2">
+          <input type="password" name="password" placeholder="Password..." class="form-control" >
+      </div>
+       <button type="submit"> Submit </button>
+<!--      <button type="submit"> Sign up </button>-->
+
+
+    </form>
+  </div>
+</div>

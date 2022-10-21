@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit page</title>
+</head>
+<body>
+     <h1>Question</h1>
+  <form action="/polls/update/{{ a.id }}/" method="post">
+       {% csrf_token %}
+  <label for="quest">Add a Question</label><br>
+  <input type="text" id="quest" name="quest"value="{{ a.quest }}"><br>
+      <input type="submit" value="Save">
+     </form>
+</body>
+</html>
